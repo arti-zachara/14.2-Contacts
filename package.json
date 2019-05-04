@@ -2,7 +2,7 @@
   "name": "14.2",
   "version": "1.0.0",
   "description": "Kodilla task 14.5 and 14.7 React: Contact list",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "npm-run-all test:js test:index",
     "test:index": "html-validator --file=index.html --verbose",
