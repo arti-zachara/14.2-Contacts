@@ -5,8 +5,10 @@ body {
 }
 
 .contactForm {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   width: 80vw;
   max-width: 400px;
   border: 2px solid #d15d5d;
@@ -52,14 +54,18 @@ ul {
   max-width: 600px;
   margin: 10px auto;
   padding: 0;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 .contactsList .contactItem {
   width: 90%;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border: 2px solid #797676;
   border-radius: 15px;
   margin: 10px;
@@ -84,14 +90,12 @@ ul {
 .contactsList .contactItem .label p.contactLabel {
   text-align: left;
   font-size: 18px;
-  margin: 5px;
+  margin: 5px 0;
 }
 
 .contactsList .contactItem .label a {
   font-size: 16px;
   text-decoration: none;
   color: #797676;
-  margin: 5px;
 }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.prefixed.css.map */

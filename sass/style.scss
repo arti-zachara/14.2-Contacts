@@ -1,0 +1,96 @@
+$newContactDark: rgb(209, 93, 93);
+$newContactLight: rgb(240, 145, 145);
+$backgroundDark: rgb(219, 200, 200);
+$backgroundLight: rgb(243, 227, 227);
+$contactBorder: rgb(121, 118, 118);
+$contactBackgroundDark: rgb(187, 182, 182);
+$contactBackgroundLight: rgb(230, 223, 223);
+
+body {
+  font-family: "Metrophobic", sans-serif;
+  margin: 0;
+  background-color: $backgroundDark;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  max-width: 400px;
+  border: 2px solid $newContactDark;
+  border-radius: 15px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: $backgroundLight;
+  input {
+    width: 80%;
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid $newContactLight;
+    padding-left: 20px;
+    margin: 10px auto;
+    outline: none;
+  }
+  button {
+    width: 35%;
+    border: none;
+    height: 30px;
+    border-radius: 15px;
+    background-color: $newContactLight;
+    color: white;
+    margin: 10px auto;
+  }
+  button:hover {
+    border: 2px solid $newContactDark;
+    background-color: $newContactDark;
+  }
+}
+ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.contactsList {
+  width: 90vw;
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  .contactItem {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid $contactBorder;
+    border-radius: 15px;
+    margin: 10px;
+    background-color: $contactBackgroundDark;
+    img.contactImage {
+      margin: 20px;
+      width: 120px;
+      height: 120px;
+    }
+    .label {
+      border: 2px solid $contactBorder;
+      border-radius: 15px;
+      margin: 10px;
+      padding: 10px;
+      background-color: $contactBackgroundLight;
+      min-width: 50%;
+
+      p.contactLabel {
+        text-align: left;
+        font-size: 18px;
+        margin: 5px;
+      }
+      a {
+        font-size: 16px;
+        text-decoration: none;
+        color: $contactBorder;
+        margin: 5px;
+      }
+    }
+  }
+}
