@@ -25,6 +25,7 @@ var ContactForm = React.createClass({
       </form>
     );
 
+    // without babel
     // React.createElement( "form", { className: "contactForm" },
     //   React.createElement("input", { type: "text", placeholder: "Imię", value: this.props.contact.firstName }),
     //   React.createElement("input", { type: "text", placeholder: "Nazwisko", value: this.props.contact.lastName }),
